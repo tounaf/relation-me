@@ -1,3 +1,12 @@
-{% block main %}
-    hello {{ nom }}
+{% extends 'base.html.twig'%}
+
+{% block body %}
+    <div>
+        <p> hello {{ nom }} </p>
+    </div>
+    <br>
+    
+    <div>
+        <img src="{{ asset('build/images/sabbat.jpg') }}" alt="">
+    </div>
 {% endblock %}

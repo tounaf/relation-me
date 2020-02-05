@@ -34,6 +34,9 @@ Encore
     // but, you probably want this, unless you're building a single-page app
     .enableSingleRuntimeChunk()
 
+    //set special style
+    .addStyleEntry('style',['./assets/css/style/style1.scss',
+                            './assets/css/style/style.scss'])
     /*
      * FEATURE CONFIG
      *
@@ -54,7 +57,8 @@ Encore
     })
 
     // enables Sass/SCSS support
-    //.enableSassLoader()
+    .enableSassLoader()
+
 
     // uncomment if you use TypeScript
     //.enableTypeScriptLoader()
