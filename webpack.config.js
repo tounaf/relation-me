@@ -25,7 +25,8 @@ Encore
      */
     .addEntry('app', './assets/js/app.js')
     //.addEntry('page1', './assets/js/page1.js')
-    //.addEntry('page2', './assets/js/page2.js')
+    //vue
+    .addEntry('vue', './assets/js/vue.js')
 
     // When enabled, Webpack "splits" your files into smaller pieces for greater optimization.
     .splitEntryChunks()
@@ -58,8 +59,8 @@ Encore
 
     // enables Sass/SCSS support
     .enableSassLoader()
-
-
+    //enable vue loader
+    .enableVueLoader()
     // uncomment if you use TypeScript
     //.enableTypeScriptLoader()
 
