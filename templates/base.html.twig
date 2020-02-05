@@ -13,7 +13,13 @@
     </head>
     <body>
         <div id="app">
-            ${message}
+           {#<span v-bind:title="message"> ${message} </span><br>#}
+            <ol>
+                <li v-for="m in messages">${m.text}</li>
+            </ol>
+            <input type="text" v-model="message">
+            <button v-on:click="addMessage"> add</button>
+
         </div>
         {% block body %}
         {% endblock %}
