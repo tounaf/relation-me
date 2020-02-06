@@ -13,12 +13,18 @@
     </head>
     <body>
         <div id="app">
-           {#<span v-bind:title="message"> ${message} </span><br>#}
+           <span> ${reverseMessage} </span><br>
             <ol>
                 <li v-for="m in messages">${m.text}</li>
             </ol>
             <input type="text" v-model="message">
             <button v-on:click="addMessage"> add</button>
+            <br>
+            <p><ol><todo-item
+                        v-for="(tache,index) in messages"
+                        v-bind:todo="tache"
+                        v-bind:key="tache.id"
+                        ></todo-item></ol></p>
 
         </div>
         {% block body %}
