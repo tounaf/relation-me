@@ -1,6 +1,7 @@
 import ReactDOM from 'react-dom';
 import React from 'react';
 import {Clock} from './clock'
+import {Counter} from "./counter";
 
 function Comment(props) {
     return (
@@ -20,7 +21,6 @@ function Comment(props) {
         </div>
     );
 }
-
 function Avatar(props) {
     return (
         <img className="Avatar"
@@ -43,7 +43,7 @@ function formatDate(date) {
     return date.toLocaleDateString();
 }
 ReactDOM.render(
-    <Clock
+    <Counter
         />,
     document.getElementById('root')
 )
