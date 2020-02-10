@@ -12,9 +12,9 @@ use Symfony\Component\Routing\Annotation\Route;
 class ProductController extends AbstractController
 {
     /**
-     * @Route("/product", name="product")
+     * @Route("/vue", name="product")
      */
-    public function index()
+    public function vueShow()
     {
         $product = $this->getDoctrine()->getRepository(Product::class)->find(1);
         $dispatcher = new EventDispatcher();
@@ -22,5 +22,14 @@ class ProductController extends AbstractController
 //        $dispatcher->addListener(NotifyEvent::NAME,[new NotifySubscriber(), 'onCreate']);
         $dispatcher->dispatch($notifyEvent, NotifyEvent::NAME);
         return $this->render('product/index.html.twig');
+    }
+
+    /**
+     * @Route("/react", name="react_show")
+     * @return \Symfony\Component\HttpFoundation\Response
+     */
+    public function reactShow()
+    {
+        return $this->render('product/index_react.html.twig');
     }
 }

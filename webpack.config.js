@@ -28,6 +28,7 @@ Encore
     //vue
     .addEntry('vue', './assets/js/vue.js')
     .addEntry('plan', './assets/js/plan.js')
+    .addEntry('react', './assets/js/react.js')
 
     // When enabled, Webpack "splits" your files into smaller pieces for greater optimization.
     .splitEntryChunks()
@@ -64,7 +65,8 @@ Encore
     .enableVueLoader()
     // uncomment if you use TypeScript
     //.enableTypeScriptLoader()
-
+    //enable react
+    .enableReactPreset()
     // uncomment to get integrity="..." attributes on your script & link tags
     // requires WebpackEncoreBundle 1.4 or higher
     //.enableIntegrityHashes(Encore.isProduction())
