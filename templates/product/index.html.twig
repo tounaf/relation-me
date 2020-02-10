@@ -3,18 +3,26 @@
 {% block title %}Hello ProductController!{% endblock %}
 
 {% block body %}
-<style>
-    .example-wrapper { margin: 1em auto; max-width: 800px; width: 95%; font: 18px/1.5 sans-serif; }
-    .example-wrapper code { background: #F5F5F5; padding: 2px 6px; }
-</style>
 
-<div class="example-wrapper">
-    <h1>Hello {{ controller_name }}! ✅</h1>
+<div id="app-plan">
+    <h1>Hello ! ✅</h1>
+    <plan-picker></plan-picker>
 
-    This friendly message is coming from:
-    <ul>
-        <li>Your controller at <code><a href="{{ 'D:/xampp/htdocs/kitrana/symfony/relation-me/src/Controller/ProductController.php'|file_link(0) }}">src/Controller/ProductController.php</a></code></li>
-        <li>Your template at <code><a href="{{ 'D:/xampp/htdocs/kitrana/symfony/relation-me/templates/product/index.html.twig'|file_link(0) }}">templates/product/index.html.twig</a></code></li>
-    </ul>
 </div>
+{% endblock %}
+{% block javascripts %}
+    <script type="text/x-template" id="plan-picker-template">
+        <div class="plans">
+            <plan v-for="plan in plans" :name="plan" :key="plan"></plan>
+        </div>
+    </script>
+    <script type="text/x-template" id="plan-template">
+     <div>
+         <div class="plan">
+             ${name}
+         </div>
+         </p>
+     </div>
+    </script>
+    {{ encore_entry_script_tags('plan') }}
 {% endblock %}

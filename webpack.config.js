@@ -27,6 +27,7 @@ Encore
     //.addEntry('page1', './assets/js/page1.js')
     //vue
     .addEntry('vue', './assets/js/vue.js')
+    .addEntry('plan', './assets/js/plan.js')
 
     // When enabled, Webpack "splits" your files into smaller pieces for greater optimization.
     .splitEntryChunks()

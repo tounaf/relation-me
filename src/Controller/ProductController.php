@@ -21,8 +21,6 @@ class ProductController extends AbstractController
         $notifyEvent = new NotifyEvent($product);
 //        $dispatcher->addListener(NotifyEvent::NAME,[new NotifySubscriber(), 'onCreate']);
         $dispatcher->dispatch($notifyEvent, NotifyEvent::NAME);
-        return $this->render('product/index.html.twig', [
-            'controller_name' => 'ProductController',
-        ]);
+        return $this->render('product/index.html.twig');
     }
 }

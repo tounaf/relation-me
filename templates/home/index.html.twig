@@ -9,4 +9,24 @@
     <div>
         {#<img src="{{ asset('build/images/sabbat.jpg') }}" alt="">#}
     </div>
+
+    <div id="app">
+        <span> ${reverseMessage} </span><br>
+        <ol>
+            <li v-for="m in messages">${m.text}</li>
+        </ol>
+        <input type="text" v-model="message">
+        <button v-on:click="addMessage"> add</button>
+        <br>
+        <p><ol><todo-item
+                    v-for="(tache,index) in messages"
+                    v-bind:todo="tache"
+                    v-bind:key="tache.id"
+            ></todo-item></ol></p>
+
+    </div>
+{% endblock %}
+
+{% block javascripts %}
+    {{ encore_entry_script_tags('vue') }}
 {% endblock %}
