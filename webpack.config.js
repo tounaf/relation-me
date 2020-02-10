@@ -26,9 +26,9 @@ Encore
     .addEntry('app', './assets/js/app.js')
     //.addEntry('page1', './assets/js/page1.js')
     //vue
-    .addEntry('vue', './assets/js/vue.js')
-    .addEntry('plan', './assets/js/plan.js')
-    .addEntry('react', './assets/js/react.js')
+    .addEntry('vue', './assets/js//vue/vue.js')
+    .addEntry('plan', './assets/js/vue/plan.js')
+    .addEntry('react', './assets/js/react/react.js')
 
     // When enabled, Webpack "splits" your files into smaller pieces for greater optimization.
     .splitEntryChunks()

@@ -1,5 +1,6 @@
 import ReactDOM from 'react-dom';
 import React from 'react';
+import {Clock} from './clock'
 
 function Comment(props) {
     return (
@@ -42,9 +43,7 @@ function formatDate(date) {
     return date.toLocaleDateString();
 }
 ReactDOM.render(
-    <Comment
-        date={comment.date}
-        text={comment.text}
-        author={comment.author}/>,
+    <Clock
+        />,
     document.getElementById('root')
 )
