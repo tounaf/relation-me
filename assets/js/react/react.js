@@ -2,6 +2,7 @@ import ReactDOM from 'react-dom';
 import React from 'react';
 import {Clock} from './clock'
 import {Counter} from "./counter";
+import {LoginControl} from "./login-control";
 
 function Comment(props) {
     return (
@@ -43,7 +44,7 @@ function formatDate(date) {
     return date.toLocaleDateString();
 }
 ReactDOM.render(
-    <Counter
+    <LoginControl
         />,
     document.getElementById('root')
 )
