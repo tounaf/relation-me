@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="3e5bcaaa-ba16-425f-ac79-bc52384ef6b2" name="Default" comment="" />
+    <list default="true" id="3e5bcaaa-ba16-425f-ac79-bc52384ef6b2" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/logtest.xml" beforeDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -82,18 +84,6 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="CrawlerCommand.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Command/CrawlerCommand.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="25" column="5" selection-start-line="25" selection-start-column="5" selection-end-line="25" selection-end-column="5" />
-              <folding>
-                <element signature="e#31#76#0#PHP" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="composer.json" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/composer.json">
           <provider selected="true" editor-type-id="text-editor">
@@ -435,12 +425,12 @@
       <workItem from="1581052720156" duration="11303000" />
       <workItem from="1582543429252" duration="2983000" />
       <workItem from="1582643116591" duration="624000" />
-      <workItem from="1582715794335" duration="4092000" />
+      <workItem from="1582715794335" duration="4828000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="80650000" />
+    <option name="totallyTimeSpent" value="81386000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -475,13 +465,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/vendor/symfony/http-kernel/Bundle/Bundle.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="196">
-          <caret line="31" column="12" selection-start-line="31" selection-start-column="12" selection-end-line="31" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/vendor/twig/extra-bundle/src/DependencyInjection/Compiler/MissingExtensionSuggestorPass.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="136">
@@ -747,6 +730,9 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/results/phpunit/phpunit.xml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/logtest.xml">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/phpunit.xml.dist">
