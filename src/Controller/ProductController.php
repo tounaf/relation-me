@@ -7,6 +7,7 @@ use App\Event\NotifyEvent;
 use App\Subscribers\NotifySubscriber;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\EventDispatcher\EventDispatcher;
+use Symfony\Component\HttpFoundation\JsonResponse;
 use Symfony\Component\Routing\Annotation\Route;
 
 class ProductController extends AbstractController
@@ -31,5 +32,13 @@ class ProductController extends AbstractController
     public function reactShow()
     {
         return $this->render('product/index_react.html.twig');
+    }
+
+    /**
+     * @Route("/product")
+     */
+    public function product()
+    {
+        return new JsonResponse("ok");
     }
 }

@@ -11,6 +11,7 @@ namespace App\Controller;
 
 use App\Service\TransformerInterface;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
+use Symfony\Component\HttpFoundation\JsonResponse;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Routing\Annotation\Route;
 
@@ -27,6 +28,15 @@ class HomeController extends AbstractController
         return $this->render('home/index.html.twig', array(
             'nom' => $upperTransofrmer->transform($nom)
         ));
+    }
+
+    /**
+     * @Route("/show", methods={"GET"})
+     * @return JsonResponse
+     */
+    public function show()
+    {
+        return new JsonResponse(array('status'=>Response::HTTP_OK,"message"=>'succes'));
     }
 
 }
