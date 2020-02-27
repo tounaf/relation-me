@@ -13,6 +13,7 @@ use App\Service\TransformerInterface;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\JsonResponse;
 use Symfony\Component\HttpFoundation\Response;
+use Symfony\Component\HttpFoundation\Session\Session;
 use Symfony\Component\Routing\Annotation\Route;
 
 class HomeController extends AbstractController
@@ -25,6 +26,13 @@ class HomeController extends AbstractController
      */
     public function index(TransformerInterface $upperTransofrmer, $nom)
     {
+
+        $array = array('status'=>true);
+        if ($array['status'] = true) {
+            $session = new Session();
+        } else {
+
+        }
         return $this->render('home/index.html.twig', array(
             'nom' => $upperTransofrmer->transform($nom)
         ));
